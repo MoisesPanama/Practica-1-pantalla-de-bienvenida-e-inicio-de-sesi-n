@@ -8,6 +8,9 @@
     <string name="password_hint">Contraseña</string>
     <string name="show_password">Mostrar contraseña</string>
     <string name="hide_password">Ocultar contraseña</string>
+    <string name="email_required">Correo requerido</string>
+    <string name="password_required">Contraseña requerida</string>
+    <string name="login_success">Inicio de sesión correcto</string>
     <string name="logo_uteq">Logo de la UTEQ</string>
     <string name="logo_facultad">Logo de la Facultad de Ciencias de la Computación</string>
 </resources>

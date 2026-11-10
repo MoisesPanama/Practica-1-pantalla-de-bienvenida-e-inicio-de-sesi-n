@@ -4,7 +4,7 @@
 **Asignatura:** Aplicaciones Móviles – UTEQ 2026  
 **Repositorio:** [Practica-1-pantalla-de-bienvenida-e-inicio-de-sesi-n](https://github.com/MoisesPanama/Practica-1-pantalla-de-bienvenida-e-inicio-de-sesi-n)
 
-Aplicación Android desarrollada en Kotlin con dos pantallas: una **bienvenida** con los logos de la UTEQ y de la Facultad de Ciencias de la Computación (FCC), y un **inicio de sesión** con correo y contraseña usando Material Components. El botón **Ingresar** abre la pantalla de login.
+Aplicación Android desarrollada en Kotlin con dos pantallas: una **bienvenida** con los logos de la UTEQ y de la Facultad de Ciencias de la Computación (FCC), y un **inicio de sesión** en una tarjeta con correo y contraseña usando Material Components. El botón **Ingresar** de la bienvenida abre la pantalla de login.
 
 ## Objetivo de la práctica
 
@@ -17,9 +17,9 @@ Aplicar los conceptos básicos de Android vistos en clase:
 
 ## ¿Qué hace?
 
-- **Pantalla de bienvenida:** muestra el logo de la UTEQ, el logo de la FCC, un mensaje de bienvenida y el botón para ingresar al inicio de sesión.
-- **Inicio de sesión:** presenta campos de correo y contraseña con íconos, teclado adecuado para cada campo y un botón para mostrar u ocultar la contraseña.
-- **Navegación:** al presionar **Ingresar** se abre la segunda pantalla mediante un `Intent`.
+- **Pantalla de bienvenida:** muestra el logo horizontal de la UTEQ, el logo de la FCC, un mensaje de bienvenida y el botón para ingresar al inicio de sesión.
+- **Inicio de sesión:** presenta una tarjeta con campos de correo y contraseña, íconos, teclado adecuado para cada campo, opción para mostrar u ocultar la contraseña y botón **Ingresar** con validación básica.
+- **Navegación:** al presionar **Ingresar** en la bienvenida se abre la segunda pantalla mediante un `Intent`.
 
 ## Flujo de la aplicación
 
@@ -40,6 +40,9 @@ LoginActivity (Inicio de sesión)
 - [x] Campo de correo con ícono y teclado de tipo email.
 - [x] Campo de contraseña con ícono de candado.
 - [x] Mostrar y ocultar la contraseña con íconos de ojo.
+- [x] Tarjeta de inicio de sesión con esquinas redondeadas y sombra.
+- [x] Botón **Ingresar** con validación de campos vacíos.
+- [x] Mensaje de confirmación al completar los campos.
 - [x] Diseño responsivo básico con `ConstraintLayout`.
 
 ## Tecnologías
@@ -70,7 +73,7 @@ Practica1/
 │   │   └── LoginActivity.kt      # Pantalla de inicio de sesión
 │   ├── res/
 │   │   ├── drawable/
-│   │   │   ├── logo.png             # Logo de la UTEQ
+│   │   │   ├── logo_uteq.jpg        # Logo horizontal de la UTEQ
 │   │   │   ├── logo_facultad.jpg    # Logo de la FCC
 │   │   │   ├── mail.png             # Ícono de correo
 │   │   │   ├── lock.png             # Ícono de contraseña
@@ -95,7 +98,7 @@ Practica1/
 
 | Recurso | Descripción |
 | --- | --- |
-| `logo.png` | Escudo de la Universidad Técnica Estatal de Quevedo. |
+| `logo_uteq.jpg` | Logo horizontal de la Universidad Técnica Estatal de Quevedo. |
 | `logo_facultad.jpg` | Logo de la Facultad de Ciencias de la Computación. |
 | `mail.png` | Ícono del campo de correo electrónico. |
 | `lock.png` | Ícono del campo de contraseña. |
@@ -138,7 +141,7 @@ app/build/outputs/apk/debug/app-debug.apk
 
 - El proyecto corresponde únicamente a la interfaz de bienvenida e inicio de sesión.
 - No incluye autenticación real, base de datos ni conexión con un servidor.
-- Los campos del login son demostrativos y no validan credenciales.
+- La validación del login solo comprueba que los campos no estén vacíos; no valida credenciales reales.
 
 ## Verificación
 

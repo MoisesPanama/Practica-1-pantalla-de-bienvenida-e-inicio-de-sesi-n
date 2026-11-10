@@ -10,7 +10,7 @@
 
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="160dp"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:adjustViewBounds="true"
@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo_uteq" />
 
     <TextView
         android:id="@+id/tvWelcome"
@@ -35,7 +35,7 @@
 
     <ImageView
         android:id="@+id/imgLogoFacultad"
-        android:layout_width="150dp"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:adjustViewBounds="true"

@@ -2,10 +2,13 @@ package com.example.practica1
 
 import android.os.Bundle
 import android.text.InputType
+import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.widget.doAfterTextChanged
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
@@ -23,8 +26,11 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
 
+        val tilCorreo = findViewById<TextInputLayout>(R.id.tilCorreo)
+        val txtCorreo = findViewById<TextInputEditText>(R.id.txtCorreo)
         val tilPassword = findViewById<TextInputLayout>(R.id.tilPassword)
         val txtPassword = findViewById<TextInputEditText>(R.id.textPassword)
+        val btnIngresar = findViewById<Button>(R.id.btnIngresarLogin)
 
         tilPassword.setEndIconOnClickListener {
             passwordVisible = !passwordVisible
@@ -44,5 +50,32 @@ class LoginActivity : AppCompatActivity() {
                 if (passwordVisible) R.string.hide_password else R.string.show_password
             )
         }
+
+        btnIngresar.setOnClickListener {
+            val correo = txtCorreo.text?.toString()?.trim().orEmpty()
+            val password = txtPassword.text?.toString().orEmpty()
+            var formularioValido = true
+
+            if (correo.isEmpty()) {
+                tilCorreo.error = getString(R.string.email_required)
+                formularioValido = false
+            } else {
+                tilCorreo.error = null
+            }
+
+            if (password.isEmpty()) {
+                tilPassword.error = getString(R.string.password_required)
+                formularioValido = false
+            } else {
+                tilPassword.error = null
+            }
+
+            if (formularioValido) {
+                Toast.makeText(this, R.string.login_success, Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        txtCorreo.doAfterTextChanged { tilCorreo.error = null }
+        txtPassword.doAfterTextChanged { tilPassword.error = null }
     }
 }
