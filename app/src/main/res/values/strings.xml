@@ -9,4 +9,5 @@
     <string name="show_password">Mostrar contraseña</string>
     <string name="hide_password">Ocultar contraseña</string>
     <string name="logo_uteq">Logo de la UTEQ</string>
+    <string name="logo_facultad">Logo de la Facultad de Ciencias de la Computación</string>
 </resources>
