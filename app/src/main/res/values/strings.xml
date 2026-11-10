@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Practica1</string>
+    <string name="app_name">Práctica 1</string>
+    <string name="welcome_title">Bienvenido a la FCC</string>
+    <string name="welcome_footer">UTEQ 2026 - Moisés Panamá</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="login_title">Inicio de Sesión</string>
+    <string name="email_hint">Correo Electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="show_password">Mostrar contraseña</string>
+    <string name="hide_password">Ocultar contraseña</string>
+    <string name="logo_uteq">Logo de la UTEQ</string>
 </resources>

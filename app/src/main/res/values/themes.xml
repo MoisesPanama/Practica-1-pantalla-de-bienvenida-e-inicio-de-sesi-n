@@ -1,8 +1,10 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Practica1" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+    <!-- Tema claro para mantener el fondo blanco de las pantallas. -->
+    <style name="Base.Theme.Practica1" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/uteq_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
     <style name="Theme.Practica1" parent="Base.Theme.Practica1" />
