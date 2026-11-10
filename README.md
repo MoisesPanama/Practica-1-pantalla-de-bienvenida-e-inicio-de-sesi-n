@@ -84,6 +84,9 @@ Practica1/
 │   │       ├── strings.xml
 │   │       └── themes.xml
 │   └── AndroidManifest.xml
+├── evidencias/
+│   ├── bienvenida.png
+│   └── login.png
 ├── README.md
 └── build.gradle.kts
 ```
@@ -129,9 +132,7 @@ app/build/outputs/apk/debug/app-debug.apk
 
 | Bienvenida | Inicio de sesión |
 |:---:|:---:|
-| _Agregar captura_ | _Agregar captura_ |
-
-> Para completar esta sección, crea una carpeta `evidencias/` en la raíz del proyecto, guarda allí las capturas de ambas pantallas y reemplaza los textos por las imágenes en la tabla.
+| ![Pantalla de bienvenida](evidencias/bienvenida.png) | ![Pantalla de inicio de sesión](evidencias/login.png) |
 
 ## Alcance de la práctica
 
